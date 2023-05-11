@@ -1,0 +1,275 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; 
+    color: #2B546A;
+}
+nav .container-fluid{
+    padding-right: calc(var(--bs-gutter-x) * 1.5);
+    padding-left: calc(var(--bs-gutter-x) * 1.5);
+}
+.bg-primary-blue{
+    background: #2B546A;
+    color: #F9FBFE;
+}
+.bg-secondary-blue{
+    background: #E3EEFF;
+    color: #2B546A;
+}
+.bg-tertiary-white{
+    background: #F9FBFE;
+    color: #2B546A;
+}
+.text-primary-blue{
+    color: #2B546A;
+}
+.text-secondary-blue{
+    color: #E3EEFF;
+}
+.text-tertiary-white{
+    color: #F9FBFE;
+}
+.rounded-50{
+    border-radius: 50px;
+}
+.fs-8{
+    font-size: 0.875rem;
+}
+.fs-small
+
+/* button hover */
+.btn{
+    font-weight: 500;
+}
+.btn.bg-primary-blue:hover, .btn.bg-primary-blue:focus{
+    border: 1px solid #2B546A;
+    color: #2B546A;
+}
+.btn.bg-secondary-blue:hover, .btn.bg-secondary-blue:focus{
+    border: 1px solid #E3EEFF;
+    color: #F9FBFE;
+}
+.btn.bg-tertiary-white:hover, .btn.bg-tertiary-white:focus{
+    border: 1px solid #F9FBFE;
+    color: #2B546A;
+}
+
+/* outline button */
+.outline-primary-blue{
+    border: 1px solid #2B546A;
+    background-color: transparent;
+}
+.outline-secondary-blue{
+    border: 1px solid #E3EEFF;
+    background-color: transparent;
+}
+.outline-tertiary-white{
+    border: 1px solid #F9FBFE;
+    background-color: transparent;
+}
+
+/* link  */
+a.text-primary-blue{
+    color: #2B546A;
+}
+a.text-primary-blue:hover, a.text-primary-blue:active{
+    color: #2B546A;
+    font-weight: 700;
+}
+a.text-secondary-blue{
+    color: #E3EEFF;
+}
+a.text-secondary-blue:hover, a.text-secondary-blue:active{
+    color: #E3EEFF;
+    font-weight: 700;
+}
+a.text-tertiary-white{
+    color: #F9FBFE;
+}
+a.text-tertiary-white:hover,a.text-tertiary-white:active{
+    color: #F9FBFE;
+    font-weight: 700;
+}
+
+/* font-blackhansans */
+.title, .container .name-class{
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+/* user carousel no signin/login */
+/* .class-carousel{
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 743px;
+    height: 381px;
+    background-image: url('/img/women-use-laptops-office-with-pleasure\ 1.png');
+    border-radius: 30px;
+
+} */
+.container {
+    position: relative;
+    display: inline-block;
+}
+  
+.container img {
+    max-width: 100%;
+}
+
+.container .number, .container .desc-class, .container .name-class {
+    position: absolute;
+}
+.container .number {
+    top: 10px;
+    right: 20px;
+    background-color: #2B546A;
+    color: #F9FBFE;
+    padding: 1.5%;
+    font-size: 1.625rem;
+    font-weight: 700;
+    border-radius: 100px;
+    width: 8%;
+    height: 16%;
+    text-align: center;
+}
+.container .desc-class{
+    padding: 2.5% 6% 2.5% 6%;
+    bottom: 20%;
+    /* border-radius: 20px; */
+    background-color: #F9FBFE;
+}
+.container .name-class{
+    padding: 2.5% 6% 2.5% 6%;
+    bottom: -7%;
+    left: 6%;
+    border-radius: 20px;
+}
+
+/* carousel */
+.carousel-inner{
+    overflow: visible;
+}
+.carousel-indicators{
+    bottom: -4.375rem;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    border: 2px solid #2B546A;
+}
+.carousel-indicators .active{
+    background: #2B546A;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-position: center;
+    background-size: 55%;
+    background-color: #2B546A;
+    border-radius: 100%;
+    opacity: 1 !important;
+}
+.carousel-control-prev{
+    left: unset;
+    right: 5rem !important;
+}
+.carousel-control-next{
+    right: 2rem !important;
+}
+.carousel-control-prev, .carousel-control-next{
+    top: -45px;
+    align-items: flex-start;
+    opacity: 1 !important;
+    width: auto;
+}
+
+/* carousel no overflow */
+.carousel-indicators.no-overflow-carousel {
+    bottom: 0;
+}
+
+.carousel-inner.no-overflow-carousel{
+    overflow: hidden;
+}
+.carousel-indicators.no-overflow-carousel [data-bs-target] {
+    border: 0;
+    background-color: #F9FBFE;
+}
+.carousel-container{
+    height: auto;
+    max-width: 100%;
+    width: 400px;
+}
+.carousel-card{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.carousel-card img{
+    max-width: 100%;
+    width: 220px;
+    max-height: inherit;
+    height: 121px;
+    object-fit: cover;
+    place-self: center;
+}
+
+/* input form */
+input[type="radio"] {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1;
+    width: 1;
+    margin: -1;
+    padding: 0;
+    border: 0;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    color: #2B546A;
+    border: 2px solid #2B546A;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    font-size: 1.325rem;
+}
+  
+.icon:hover {
+    cursor: pointer;
+    background-color: #2B546A;
+    color: #F9FBFE;
+}
+
+.radio-form:checked ~ .icon {
+    background-color: #2B546A;
+    color: #F9FBFE;
+}
+
+/* dropdown */
+.dropdown-item.active, .dropdown-item:active{
+    background: #E3EEFF;
+    color: #2B546A;
+    font-weight: 700;
+}
+.dropdown-toggle::after{
+    content: none;
+}
+
+/* user dashboard streak */
+.streak-container{
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+}
+
+/* card */
