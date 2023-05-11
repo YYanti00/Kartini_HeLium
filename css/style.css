@@ -42,7 +42,13 @@ nav .container-fluid{
 .fs-8{
     font-size: 0.875rem;
 }
-.fs-small
+.box-shadow-s{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.h-inherit{
+    height:inherit;
+}
+
 
 /* button hover */
 .btn{
@@ -74,7 +80,18 @@ nav .container-fluid{
     border: 1px solid #F9FBFE;
     background-color: transparent;
 }
-
+.btn.outline-primary-blue:hover,.btn.outline-primary-blue:focus{
+    background-color: #2B546A;
+    color:#F9FBFE;
+}
+.btn.outline-secondary-blue:hover,.btn.outline-secondary-blue:focus{
+    background-color: #E3EEFF;
+    color: #2B546A;
+}
+.btn.outline-tertiary-white:hover,.btn.outline-tertiary-white:focus{
+    background-color:#F9FBFE;
+    color: #2B546A;
+}
 /* link  */
 a.text-primary-blue{
     color: #2B546A;
@@ -104,16 +121,6 @@ a.text-tertiary-white:hover,a.text-tertiary-white:active{
 }
 
 /* user carousel no signin/login */
-/* .class-carousel{
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    width: 743px;
-    height: 381px;
-    background-image: url('/img/women-use-laptops-office-with-pleasure\ 1.png');
-    border-radius: 30px;
-
-} */
 .container {
     position: relative;
     display: inline-block;
@@ -158,6 +165,7 @@ a.text-tertiary-white:hover,a.text-tertiary-white:active{
 }
 .carousel-indicators{
     bottom: -4.375rem;
+    padding-bottom: 1.625rem;
 }
 .carousel-indicators [data-bs-target]{
     width: 10px;
@@ -272,4 +280,30 @@ input[type="radio"] {
     padding-top: 20px;
 }
 
-/* card */
+/* checbox */
+.checkbox-round {
+    width: .725em;
+    height: .725em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #2B546A;
+}
+
+.checkbox-round:checked {
+    background-color: #2B546A;
+}
+
+/* main-cs */
+.main-cs{
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+}
