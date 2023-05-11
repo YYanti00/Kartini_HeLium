@@ -225,6 +225,12 @@ a.text-tertiary-white:hover,a.text-tertiary-white:active{
     object-fit: cover;
     place-self: center;
 }
+.img-bell{
+    max-width: 100%;
+    width: 150px;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+}
 
 /* input form */
 input[type="radio"] {

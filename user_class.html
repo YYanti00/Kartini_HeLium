@@ -11,20 +11,96 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     
-    <title>Progate</title>
+    <title>Prograte</title>
 </head>
-<body style='background:#FFF4E3;'>
-    <main class='main-cs'>
-        <div class="d-flex flex-column justify-content-end align-items-center h-inherit" >
-            <h1 class="title">Coming Soon</h1>
-            <h5 class="title">Our website is under construction</h5>
-            <button class="btn outline-primary-blue rounded-pill px-3 text-primary-blue" onclick="windows.location='user_dashboard.html'">Back to dashboard</button>
-        </div>
-        <div class="d-flex justify-content-center">
-            <img src="/img/flat-engineering-construction-illustrated_23-2148892788-removebg-preview.png" alt="" class="img-fluid" width="500"height='300'>
-        </div>
-        
-        <div class="clearfix"></div>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-secondary-blue">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="user_dashboard.html">
+                    <img src="/img/Main_Colour@4x.png" alt="Prograte" width="160" height="42">
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item me-lg-5">
+                        <a class="nav-link text-primary-blue" href="catalog.html">Catalog</a>
+                    </li>
+                    <li class="nav-item me-lg-5">
+                        <a class="nav-link text-primary-blue" href="price.html">Prices</a>
+                    </li>
+                    <li class="nav-item me-lg-5">
+                        <a class="nav-link text-primary-blue" href="article.html">Articles</a>
+                    </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button type="button" class="btn position-relative me-4 p-0 border-0" onclick='window.location.href="notification.html"'>
+                            <i class="bi bi-bell text-primary-blue fs-5"></i>
+                            <span class="position-absolute translate-middle badge rounded-pill bg-danger" style='top:25%; left:25px;'>
+                              99+
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 m-0 position-relative d-flex dropdown-toggle border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div>
+                                    <img src="/img/photo-1494790108377-be9c29b29330.jpeg" alt="profile picture" width="50" height="50" class="rounded-pill" style='object-fit:cover;'>
+                                </div>
+                                <div class="ps-1 d-flex flex-column align-self-center">
+                                    <span class="m-0 p-0 fs-8 text-start">Janice Petterson</span>
+                                    <span class="m-0 p-0 fs-8 text-start">Lv 999</span>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu text-center ">
+                                <li><a class="dropdown-item" href="#"><p class="p-0 m-0 rounded-pill outline-primary-blue">Student</p> </a></li>
+                                <li><a class="dropdown-item" href="user_profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="user_favorites.html">Favorite</a></li>
+                                <li><hr class="dropdown-divider opacity-0"></li>
+                                <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <article class="d-flex align-items-center flex-column py-5">
+            <div>
+                <h3 class="title mb-4">PHP Beginner Class</h3>
+            </div>
+            <div class="mb-4">
+                <img src="/img/two-women-discussing-with-laptop.png" alt="" class="img-fluid d-block rounded-4">
+            </div>
+            <div class="d-flex flex-md-row flex-column justify-content-between col-md-8">
+                <div class="pe-md-4">
+                    <button class="btn bg-tertiary-white box-shadow-s my-2  outline-primary-blue text-primary-blue">
+                        <a href="user_forum.html" class="text-decoration-none "><i class="bi bi-chat-left-dots"></i></a>
+                    </button>
+                    <button class="btn bg-tertiary-white box-shadow-s my-2  outline-primary-blue">
+                        <i class="bi bi-newspaper"></i>
+                    </button>
+                    <button class="btn bg-tertiary-white box-shadow-s my-2  outline-primary-blue">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in augue a orci interdum lobortis a nec leo. Nunc blandit risus nec erat convallis, at mattis purus tristique. Nulla facilisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc molestie placerat urna, quis semper orci lacinia quis. Nulla turpis nibh, interdum quis pretium eget, malesuada quis enim. Praesent dui urna, dignissim quis tincidunt nec, tincidunt eu arcu. Fusce laoreet erat magna, non sollicitudin neque vehicula sit amet. Curabitur in pellentesque urna. Aenean erat risus, vehicula eget consequat sed, egestas in lacus.</p>
+                    <br>
+                    <p>In lacinia sed ipsum ut laoreet. Duis volutpat velit sit amet magna feugiat, vitae ornare sapien varius. Aliquam fermentum bibendum faucibus. Duis vel sapien in erat aliquet semper non nec justo. Duis vehicula efficitur libero, quis euismod ante aliquet ut. Vivamus ultricies imperdiet interdum. Curabitur faucibus lorem leo, a volutpat libero dignissim quis. Praesent eu fermentum diam, nec molestie ligula. Vivamus vitae purus sem. Etiam iaculis ligula augue, sit amet auctor mi consectetur ut. Quisque at pharetra urna, et malesuada nulla. Aenean fermentum velit orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent non justo lacinia, auctor leo vel, molestie sem.</p>
+                    <br>
+                    <p> Phasellus at turpis in ligula blandit molestie. Duis accumsan erat eget eleifend pretium. Sed elit nisi, bibendum nec vulputate sed, interdum non lectus. Phasellus arcu lorem, euismod eu ex in, viverra accumsan massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar libero ac luctus cursus. Fusce et neque in urna feugiat lacinia. Donec vulputate massa vel dui egestas suscipit. Maecenas commodo lacinia accumsan. Sed molestie, libero id porta tristique, tellus lorem malesuada urna, non finibus felis enim sed quam. Nunc imperdiet, libero id tempus dictum, velit nisl eleifend massa, ut facilisis erat elit posuere quam.</p>  
+                </div>
+            </div>
+            <div class="align-self-end mx-5">
+                <button class="btn bg-primary-blue rounded-pill" onclick="window.location.href='user_quiz.html'">Start Quiz</button>
+            </div>
+        </article>
     </main>
 </body>
 </html>
